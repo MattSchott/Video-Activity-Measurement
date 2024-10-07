@@ -1,18 +1,12 @@
 # Video Activity Tracker  
 ![tracks](https://github.com/user-attachments/assets/46f2e7f3-ba65-4297-94ba-51e361eb4674)
 
-This tracker compares videos frame by frame and deletes non-moving background.   
-It highlights moving objects as white. The amount of white values are calculated in
-percent.
+This tracker compares videos frame-by-frame and removes non-moving background.
+It highlights moving objects as white. The amount of white is calculated as a percentage.
 
-First you have to identify your regions of interest (ROIs) by clicking with the
-mouse on the top left and lower right corner of the ROIs. In the end press Esc
-to exit the ROI marking.
+First you need to identify your regions of interest (ROIs) by clicking on the upper left and lower right corner of each ROI. When finished, press Esc to exit the ROI selection.
 
-Then the video will be analysed and a precentage will be calculated. If the noise
-in the data is too high play around with the starting variables BRIGHTEN, BLUR, CLAHE,
-THRESHINTERACTIVE, THRESH2, BACKGROUNDSUB.
-
+The video will then be analysed and a percentage calculated. If the noise in the data is too high, play around with the start variables BRIGHTEN, BLUR, CLAHE, THRESHINTERACTIVE, THRESH2, BACKGROUNDSUB.
 
 Keys  
 ----  
@@ -31,16 +25,18 @@ ESC - exit
 Install python
 https://www.python.org/downloads/
 
-Install opencv and numpy
+Install the packages opencv and numpy
 Open the comand line (e.g win-key and then type cmd)
 type *python -m pip install OpenCV-Python numpy*
 
-Download all files from the respository in the same folder
+Download all files from the github respository in the same folder
 
-### Start Skript 
-by Doubleclicking on script or in the command line type *python DaphniaVideoActivity_4_3.py*
+### Start the script 
+by double clicking on the script or typing *python DaphniaVideoActivity_4_3.py* in the command line.
 - select the example video
-- select the petri dishes by clicking on the upper left and the lower left corner oof each dish
-- press Esc to leave ROI marking -> this generates "Calpoints.txt" with the coordinates. With this file in the folder in further analysis the ROIs muss not be defined
-- Analysis runs through and generates one png with a screenshot of the ROIs, one screenshot of all tracks, one *-addup.txt and one *-100frame.txt. 
+- Select the Petri dishes by clicking on the top left and bottom left corner of each dish.
+- Press Esc to exit the ROI selection -> this will create a "Calpoints.txt" file with the coordinates. With this file in the folder, the ROIs do not need to be defined in further analysis. If you want to redefine the ROIs, delete the Calpoints.txt file.
+- The analysis runs and generates a png with a screenshot of the ROIs, a screenshot of all tracks, a *-addup.txt and a *-100frame.txt.
+- In the addup file, every movement leaves a white path and stays white. If the animal moves over the same area, this is not recorded. This is for recognising if animals move on a position or travel far.
+- In the 100frame-file the white areas are reset every 100 frames (in a 25fps video this is every 4 seconds). This is what most people use. 
 
