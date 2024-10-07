@@ -39,4 +39,8 @@ Download all files from the respository in the same folder
 
 ### Start Skript 
 by Doubleclicking on script or in the command line type *python DaphniaVideoActivity_4_3.py*
+- select the example video
+- select the petri dishes by clicking on the upper left and the lower left corner oof each dish
+- press Esc to leave ROI marking -> this generates "Calpoints.txt" with the coordinates. With this file in the folder in further analysis the ROIs muss not be defined
+- Analysis runs through and generates one png with a screenshot of the ROIs, one screenshot of all tracks, one *-addup.txt and one *-100frame.txt. 
 
