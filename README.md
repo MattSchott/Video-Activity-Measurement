@@ -1,7 +1,6 @@
-
+# Video Activity Tracker  
 ![tracks](https://github.com/user-attachments/assets/46f2e7f3-ba65-4297-94ba-51e361eb4674)
 
-Video Activity Tracker  
 This tracker compares videos frame by frame and deletes non-moving background.   
 It highlights moving objects as white. The amount of white values are calculated in
 percent.
@@ -32,11 +31,11 @@ ESC - exit
 Install python
 https://www.python.org/downloads/
 
-Install opencv
+Install opencv and numpy
 Open the comand line (e.g win-key and then type cmd)
-type *python -m pip install OpenCV-Python*
+type *python -m pip install OpenCV-Python numpy*
 
-Download all files from the respository
+Download all files from the respository in the same folder
 
 ### Start Skript 
 by Doubleclicking on script or in the command line type *python DaphniaVideoActivity_4_3.py*
