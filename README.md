@@ -27,3 +27,17 @@ v - show original video on/off
 s - show/not show (speeds up processing time)  
 t - threshold on/off  
 ESC - exit  
+
+### Installation  
+Install python
+https://www.python.org/downloads/
+
+Install opencv
+Open the comand line (e.g win-key and then type cmd)
+type *python -m pip install OpenCV-Python*
+
+Download all files from the respository
+
+### Start Skript 
+by Doubleclicking on script or in the command line type *python DaphniaVideoActivity_4_3.py*
+
