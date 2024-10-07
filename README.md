@@ -1,5 +1,5 @@
-Video Activity Tracker
-This tracker compares videos frame by frame and deletes non-moving background.
+Video Activity Tracker  
+This tracker compares videos frame by frame and deletes non-moving background.   
 It highlights moving objects as white. The amount of white values are calculated in
 percent.
 
