@@ -17,7 +17,10 @@ THRESHINTERACTIVE, THRESH2, BACKGROUNDSUB.
 
 Keys
 ----
-if ch == 27:
+In ROI marking:
+d - delet elast point
+ESC - finish ROI marking
+In Video analysis mode:
 a - play/pause playback of video
 v - show original video on/off
 s - show/not show (speeds up processing time)
